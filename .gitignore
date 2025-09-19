@@ -1,2 +1,15 @@
 .env*
 !.env*.example
+# Compiled Python files
+__pycache__/
+*.pyc
+
+# Virtual environment directory
+venv/
+
+# Operating system files
+.DS_Store
+
+# IDE and editor files
+.vscode/
+.idea/
