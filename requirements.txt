@@ -1,0 +1,7 @@
+fastapi
+redis
+types-redis
+uvicorn
+python-dotenv
+fastapi-mail
+aiohttp-retry
