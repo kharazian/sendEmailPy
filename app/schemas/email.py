@@ -10,5 +10,5 @@ class Appointment(BaseModel):
     subject: str
     html: str
     method: str
-    ics_text: str = Field(..., alias="icsText")
-    ics_attendee_text: Optional[str] = Field(None, alias="icsAttendeeText")
+    icsText: str
+    icsAttendeeText: Optional[str]
