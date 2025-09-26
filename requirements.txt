@@ -5,3 +5,6 @@ uvicorn
 python-dotenv
 fastapi-mail
 aiohttp-retry
+PyJWT
+passlib
+python-multipart
