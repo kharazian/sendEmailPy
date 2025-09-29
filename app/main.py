@@ -8,7 +8,12 @@ from app.services import auth_service
 from app.schemas.email import Appointment
 from app.schemas.user import User
 
-app = FastAPI()
+app = FastAPI(
+    title="CRM API",
+    version="1.0.0",
+    root_path="/api" 
+)
+
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 
 @app.get("/")
