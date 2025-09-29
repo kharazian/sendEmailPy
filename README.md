@@ -92,7 +92,7 @@ The application requires specific configuration variables, which are loaded from
 Run the application using **Uvicorn**:
 
 ```bash
-uvicorn app.main:app --reload
+    .venv/bin/gunicorn app.main:app --workers 4 --worker-class uvicorn.workers.UvicornWorker --bind 0.0.0.0:8000
 ```
 
 ### Debugging/Local Development
@@ -100,5 +100,9 @@ uvicorn app.main:app --reload
 Run your application's entry script directly:
 
 ```bash
+uvicorn app.main:app --reload
+
+Or
+
 python myapp.py
 ```
